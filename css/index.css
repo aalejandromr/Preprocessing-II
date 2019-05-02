@@ -186,22 +186,24 @@ img {
 header {
   border-bottom: 1px dashed #b3b3b3;
 }
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-header nav a {
-  text-decoration: none;
-  color: black;
-}
-header nav li {
-  list-style: none;
-  padding: 0% 5% 2% 5%;
-}
-header nav li:first-child {
-  flex-basis: 100%;
-  text-align: center;
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav li {
+    list-style: none;
+    padding: 0% 5% 2% 5%;
+  }
+  header nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 .footer {
   width: 100%;
@@ -268,8 +270,12 @@ article section,
 div.container.home section {
   border-bottom: 1px dashed #b3b3b3;
 }
+article .content-destination,
+div.container.home .content-destination {
+  border-bottom: unset;
+}
 @media (max-width: 500px) {
-  div.container.home section:first-child {
+  div.container.home .content-section:first-child {
     border-bottom: unset;
   }
 }
@@ -293,6 +299,7 @@ div.container.home section {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    padding: 5% 7% 0% 7%;
   }
   .home .content-pick.destination {
     width: 100%;
@@ -310,7 +317,7 @@ div.container.home section {
 .btn {
   width: 100%;
   height: 40px;
-  background-color: black;
+  background-color: #42A3B8;
   border-radius: 4%;
   text-align: center;
   display: flex;

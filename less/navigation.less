@@ -2,19 +2,21 @@
 header {
     
     .dashed-border();
-    nav {
-        .flex(true);
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        li {
-            list-style: none;
-            padding: 0% 5% 2% 5%;
-            &:first-child {
-                flex-basis: 100%;
-                text-align: center;
+    @media @mobile {
+        nav {
+            .flex(true);
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            li {
+                list-style: none;
+                padding: 0% 5% 2% 5%;
+                &:first-child {
+                    flex-basis: 100%;
+                    text-align: center;
+                }
             }
         }
     }

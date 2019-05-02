@@ -13,9 +13,13 @@ article, div.container.home {
     section {
         .dashed-border();
     }
+
+    .content-destination {
+        .unset-dashed-border();
+    }
 }
 
-div.container.home section {
+div.container.home .content-section {
     &:first-child {
         @media @mobile {
             .unset-dashed-border();
@@ -49,6 +53,7 @@ div.container.home section {
         &.destination {
             .width-100();
         }
+        padding: 5% 7% 0% 7%;
     }
 }
 
@@ -64,7 +69,7 @@ div.container.home section {
     .width-100();
     height: 40px;
     // widows: 30px;
-    background-color: black;
+    background-color: #42A3B8;
     border-radius: 4%;
     text-align: center;
     .flex(true);

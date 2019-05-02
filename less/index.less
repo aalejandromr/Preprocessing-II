@@ -26,14 +26,26 @@ article section {
         .lateral-space(true);
     }
 
+    @media @tablet {
+        .lateral-space(true);
+    }
+
     h1 {
         @media @desktop {
+            padding: 2% 0% 2% 0;
+        }
+
+        @media @tablet {
             padding: 2% 0% 2% 0;
         }
     }
 
     p {
         @media @desktop {
+            padding-bottom: 2%;
+        }
+
+        @media @tablet {
             padding-bottom: 2%;
         }
     }
@@ -60,6 +72,10 @@ div.container.home .content-section {
     }
 
     @media @desktop {
+        flex-wrap: nowrap;
+    }
+
+    @media @tablet {
         flex-wrap: nowrap;
     }
 }

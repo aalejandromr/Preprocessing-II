@@ -186,7 +186,7 @@ img {
 header {
   border-bottom: 1px dashed #b3b3b3;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header nav {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +206,27 @@ header {
   }
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5% 0% 5%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  header nav li {
+    list-style: none;
+    padding: 2%;
+  }
+  header nav li:first-child {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 601px) and (max-width: 1399px) {
   header nav {
     display: flex;
     flex-wrap: wrap;
@@ -292,7 +313,7 @@ div.container.home .content-destination {
 article section {
   border-bottom: 1px dashed #b3b3b3;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   article section {
     padding: 0% 5% 0% 5%;
   }
@@ -302,7 +323,17 @@ article section {
     margin: 0% 5% 0% 5%;
   }
 }
+@media (min-width: 601px) and (max-width: 1399px) {
+  article section {
+    margin: 0% 5% 0% 5%;
+  }
+}
 @media (min-width: 1400px) and (max-width: 1600px) {
+  article section h1 {
+    padding: 2% 0% 2% 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1399px) {
   article section h1 {
     padding: 2% 0% 2% 0;
   }
@@ -312,7 +343,12 @@ article section {
     padding-bottom: 2%;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 601px) and (max-width: 1399px) {
+  article section p {
+    padding-bottom: 2%;
+  }
+}
+@media (max-width: 600px) {
   div.container.home .content-section:first-child {
     border-bottom: unset;
   }
@@ -321,7 +357,7 @@ article section {
 .home .content-section .img-content {
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home .content-section.inverse-content {
     flex-direction: column-reverse;
   }
@@ -331,12 +367,17 @@ article section {
     flex-wrap: nowrap;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 601px) and (max-width: 1399px) {
+  .home .content-section {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 600px) {
   .home .content-destination {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home .content-pick {
     display: flex;
     flex-wrap: wrap;
@@ -348,7 +389,7 @@ article section {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home .content-pick .destination {
     display: flex;
     flex-wrap: wrap;

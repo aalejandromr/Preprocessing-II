@@ -42,4 +42,26 @@ header {
             }
         }
     }
+
+    @media @tablet {
+        nav {
+            .flex(true);
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+            }
+            
+            padding: 0% 5% 0% 5%;
+            
+            li {
+                list-style: none;
+                padding: 2%;
+                &:first-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
 }

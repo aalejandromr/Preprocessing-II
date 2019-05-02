@@ -2,7 +2,7 @@
   flex-direction: column;
 }
 .lateral-space {
-  margin: 0% 5% 0% 5%;
+  padding: 0% 5% 0% 5%;
 }
 .dashed-border {
   border-bottom: 1px dashed #b3b3b3;
@@ -262,19 +262,21 @@ header {
   width: 30%;
   margin-bottom: 30px;
 }
-article,
 div.container.home {
-  margin: 0% 5% 0% 5%;
+  padding: 0% 5% 0% 5%;
 }
-article section,
-div.container.home section {
-  border-bottom: 1px dashed #b3b3b3;
-}
-article .content-destination,
 div.container.home .content-destination {
   border-bottom: unset;
 }
-@media (max-width: 500px) {
+article section {
+  border-bottom: 1px dashed #b3b3b3;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  article section {
+    padding: 0% 5% 0% 5%;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
   div.container.home .content-section:first-child {
     border-bottom: unset;
   }
@@ -327,4 +329,8 @@ div.container.home .content-destination {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+}
+.container {
+  max-width: unset;
+  width: 100%;
 }

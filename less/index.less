@@ -7,21 +7,26 @@
 @import (less, once) "footer";
 @import (less, once) "home-page";
 
-article, div.container.home {
+div.container.home {
     .lateral-space();
-
-    section {
-        .dashed-border();
-    }
-
     .content-destination {
         .unset-dashed-border();
     }
+
 }
+
+article section {
+    .dashed-border();
+    @media @mobile2 {
+
+        .lateral-space();
+    }
+}
+
 
 div.container.home .content-section {
     &:first-child {
-        @media @mobile {
+        @media @mobile2 {
             .unset-dashed-border();
         }
     }
@@ -77,4 +82,9 @@ div.container.home .content-section {
     font-size: 2rem;
     color: white;
     cursor: pointer;
+}
+
+.container {
+    max-width: unset;
+    width: 100%;
 }

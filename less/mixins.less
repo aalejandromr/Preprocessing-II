@@ -1,1 +1,35 @@
 // Mixins in here
+
+.flex(@centered) when (@centered = true) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex() {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.lateral-space(@desktop) when (@desktop = true) {
+    margin: 0% 5% 0% 5%;
+}
+
+.lateral-space {
+    padding: 0% 5% 0% 5%;
+}
+
+.dashed-border {
+    border-bottom: 1px dashed lighten(grey, 20%);
+}
+
+.unset-dashed-border {
+    border-bottom: unset;
+}
+
+.width-100 {
+    width: 100%;
+}

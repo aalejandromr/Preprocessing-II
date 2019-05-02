@@ -17,16 +17,32 @@ div.container.home {
 
 article section {
     .dashed-border();
-    @media @mobile2 {
+    @media @mobile {
 
         .lateral-space();
+    }
+
+    @media @desktop {
+        .lateral-space(true);
+    }
+
+    h1 {
+        @media @desktop {
+            padding: 2% 0% 2% 0;
+        }
+    }
+
+    p {
+        @media @desktop {
+            padding-bottom: 2%;
+        }
     }
 }
 
 
 div.container.home .content-section {
     &:first-child {
-        @media @mobile2 {
+        @media @mobile {
             .unset-dashed-border();
         }
     }
@@ -41,6 +57,10 @@ div.container.home .content-section {
         &.inverse-content {
             flex-direction: column-reverse;
         }
+    }
+
+    @media @desktop {
+        flex-wrap: nowrap;
     }
 }
 
@@ -87,4 +107,14 @@ div.container.home .content-section {
 .container {
     max-width: unset;
     width: 100%;
+}
+
+section {
+    figure {
+        img {
+            @media @desktop {
+                width: 100%;
+            }
+        }
+    }
 }

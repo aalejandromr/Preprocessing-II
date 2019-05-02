@@ -205,6 +205,27 @@ header {
     text-align: center;
   }
 }
+@media (min-width: 1400px) and (max-width: 1600px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5% 0% 5%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+  header nav li {
+    list-style: none;
+    padding: 2%;
+  }
+  header nav li:first-child {
+    flex-grow: 1;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -271,12 +292,27 @@ div.container.home .content-destination {
 article section {
   border-bottom: 1px dashed #b3b3b3;
 }
-@media (min-width: 0px) and (max-width: 600px) {
+@media (max-width: 500px) {
   article section {
     padding: 0% 5% 0% 5%;
   }
 }
-@media (min-width: 0px) and (max-width: 600px) {
+@media (min-width: 1400px) and (max-width: 1600px) {
+  article section {
+    margin: 0% 5% 0% 5%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  article section h1 {
+    padding: 2% 0% 2% 0;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  article section p {
+    padding-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
   div.container.home .content-section:first-child {
     border-bottom: unset;
   }
@@ -288,6 +324,11 @@ article section {
 @media (max-width: 500px) {
   .home .content-section.inverse-content {
     flex-direction: column-reverse;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .home .content-section {
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 500px) {
@@ -333,4 +374,9 @@ article section {
 .container {
   max-width: unset;
   width: 100%;
+}
+@media (min-width: 1400px) and (max-width: 1600px) {
+  section figure img {
+    width: 100%;
+  }
 }

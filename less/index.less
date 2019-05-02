@@ -1,1 +1,75 @@
 // Follow the order in the readme
+@import (less, once) "variables";
+@import (less, once) "mixins";
+@import (less, once) "reset";
+@import (less, once) "global";
+@import (less, once) "navigation";
+@import (less, once) "footer";
+@import (less, once) "home-page";
+
+article, div.container.home {
+    .lateral-space();
+
+    section {
+        .dashed-border();
+    }
+}
+
+div.container.home section {
+    &:first-child {
+        @media @mobile {
+            .unset-dashed-border();
+        }
+    }
+}
+
+.home .content-section {
+    .text-content, .img-content {
+        .width-100();
+    }
+
+    @media @mobile {
+        &.inverse-content {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.home .content-destination {
+    @media @mobile {
+        .width-100();
+    }
+}
+
+.home .content-pick {
+    
+    @media @mobile {
+        .flex(true);
+        .flex-column(); 
+        &.destination {
+            .width-100();
+        }
+    }
+}
+
+.home .content-pick .destination {
+    @media @mobile {
+        .flex(true);
+        justify-content: flex-start; 
+        .width-100();
+    }
+}
+
+.btn {
+    .width-100();
+    height: 40px;
+    // widows: 30px;
+    background-color: black;
+    border-radius: 4%;
+    text-align: center;
+    .flex(true);
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}

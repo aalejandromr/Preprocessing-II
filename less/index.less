@@ -73,6 +73,12 @@ div.container.home .content-section {
 
     @media @desktop {
         flex-wrap: nowrap;
+        &:first-child {
+            .img-content {
+            display: flex;
+            flex-direction: row-reverse;
+            }
+        }
     }
 
     @media @tablet {

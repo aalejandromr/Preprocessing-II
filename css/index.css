@@ -366,6 +366,10 @@ article section {
   .home .content-section {
     flex-wrap: nowrap;
   }
+  .home .content-section:first-child .img-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 @media (min-width: 601px) and (max-width: 1399px) {
   .home .content-section {
